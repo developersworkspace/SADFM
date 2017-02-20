@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- partial:partials/head.html -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home | South African Database for Functional Medicine</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/sadfm/favicon.ico" type="image/x-icon" />
+
+    <!--Bootstrap Framework Version 3.3.7-->
+    <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+    <!--Font Awesome Version 4.6.3 -->
+    <link href="assets/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Medical Icons -->
+    <link href="assets/css/medical-icons.css" type="text/css" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="assets/css/vendors.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" id="style">
+    <link href="assets/css/components.css" type="text/css" rel="stylesheet" id="components">
+    <link href="assets/css/sadfm.css" type="text/css" rel="stylesheet" id="sadfm">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:400,400i" rel="stylesheet">
+
+    <!-- Respond.js and HTML shiv provide HTML5 support in older browsers like IE9 and 8 -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<!-- partial -->
+
+<body>
+
+    <div class="loader-backdrop">
+        <!-- Loader -->
+        <div class="loader">
+        </div>
+    </div>
+
+    <!-- partial:partials/navbar.html -->
+    <header class="header-1">
+    <div class="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="contact">
+                        <li><span>Email Us : </span> antonio@sadfm.co.za</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false">
+                        <span class="sr-only">Toggle Menu</span>
+                        <i class="fa fa-bars"></i>
+                    </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/sadfm/logo_text.png" alt="">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Contact Us</a></li>
+                   <li><a href="#">Login</a>
+                        <ul class="sub-menu">
+                            <li><a href="htts://epons.sadfm.co.za">EPONS</a></li>
+                            <li><a href="http://www.sadfm.co.za/modules.php?name=Your_Account">Legacy System</a></li>
+                        </ul>
+                    </li>
+                    <!--<li><a href="#">Home</a>
+                        <ul class="sub-menu">
+                            <li><a href="home-version-1.html">Home Version 1 <span class="badge">Appointment Form</span> </a></li>
+                            <li><a href="home-version-2.html">Home Version 2 <span class="badge">Slider Revolution</span> </a></li>
+                            <li><a href="home-version-3.html">Home Version 3 <span class="badge">Video Background</span> </a></li>
+                        </ul>
+                    </li>
+                    <li class="mega-sub-menu"><a href="#">Pages</a>
+                        <ul class="mega-dropdown row">
+                            <li class="col-sm-3">
+                                <ul class="mega-menu-items">
+                                    <li class="heading">Doctor Grid</li>
+                                    <li><a href="doctors-style-1.html">Doctor Style 1</a></li>
+                                    <li><a href="doctors-style-2.html">Doctor Style 2</a></li>
+                                    <li><a href="doctors-mini.html">Doctor Mini</a></li>
+                                    <li class="hr"></li>
+                                    <li class="heading">Doctor Profile</li>
+                                    <li><a href="doctor-single.html">Doctor Single</a></li>
+                                    <li><a href="doctor-single-sidebar.html">Doctor Single with Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul class="mega-menu-items">
+                                    <li class="heading">Department Grid</li>
+                                    <li><a href="departments-style-1.html">Department Style 1</a></li>
+                                    <li><a href="departments-style-2.html">Department Style 2</a></li>
+                                    <li><a href="departments-mini.html">Department Mini</a></li>
+                                    <li><a href="departments-list.html">Department List</a></li>
+                                    <li class="hr"></li>
+                                    <li class="heading">Department Details</li>
+                                    <li><a href="department-single.html">Department Single</a></li>
+                                    <li><a href="department-single-sidebar.html">Department Single with Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul class="mega-menu-items">
+                                    <li class="heading">Appointments</li>
+                                    <li><a href="appointment-advanced.html">Appointment Advanced</a></li>
+                                    <li><a href="appointment-basic.html">Appointment Basic</a></li>
+                                    <li><a href="book-appointment-form.html">Book Appointment Form</a></li>
+                                    <li class="hr"></li>
+                                    <li class="heading">About Medwise</li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="why-us.html">Why Us</a></li>
+                                    <li><a href="process.html">Process</a></li>
+                                    <li><a href="features.html">Features</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <li><a href="careers.html">Careers</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul class="mega-menu-items">
+                                    <li class="heading">Other Pages</li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="download-app.html">Download App</a></li>
+                                    <li><a href="pricing-tables.html">Pricing Tables</a></li>
+                                    <li><a href="offers.html">Offers</a></li>
+                                    <li><a href="dos-donts.html">Dos &amp; Donts</a></li>
+                                    <li><a href="question-answer.html">Q and A</a></li>
+                                    <li><a href="policies.html">Policies</a></li>
+                                    <li><a href="coming-soon.html">Coming Soon</a></li>
+                                    <li><a href="404.html">404-Not Found</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mega-sub-menu"><a href="#">Elements</a>
+                        <ul class="mega-dropdown row" style="background-image:url('assets/images/doc-3.png'); background-position:right top; background-repeat:no-repeat">
+                            <li class="col-sm-3">
+                                <ul class="mega-menu-items">
+                                    <li class="heading">Header &amp; Footer</li>
+                                    <li><a href="page-style-1.html">Page Style 1</a></li>
+                                    <li><a href="page-style-2.html">Page Style 2</a></li>
+                                    <li><a href="page-style-3.html">Page Style 3</a></li>
+                                    <li class="hr"></li>
+                                    <li class="heading">Interaction</li>
+                                    <li><a href="call-to-action.html">Call To Action</a></li>
+                                    <li><a href="subscribe.html">Subscribe</a></li>
+                                    <li><a href="call-out.html">Call Out</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul class="mega-menu-items">
+                                    <li class="heading">Elements</li>
+                                    <li><a href="icon-boxes.html">Icon Boxes</a></li>
+                                    <li><a href="accordion.html">Accordion</a></li>
+                                    <li><a href="tabs.html">Tabs</a></li>
+                                    <li><a href="progress-bar.html">Progress Bars</a></li>
+                                    <li><a href="modals.html">Modals</a></li>
+                                    <li><a href="carousels.html">Carousels</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul class="mega-menu-items">
+                                    <li class="heading">Miscellaneous</li>
+                                    <li><a href="medical-icons.html">Medical Icons</a></li>
+                                    <li><a href="text-sections.html">Text Sections</a></li>
+                                    <li><a href="quick-contact.html">Quick Contact</a></li>
+                                    <li><a href="video.html">Video</a></li>
+                                    <li><a href="counters.html">Counters</a></li>
+                                    <li><a href="social-media.html">Social Media</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog-list.html">Blog List</a></li>
+                            <li><a href="blog-single.html">Blog Single</a></li>
+                            <li><a href="widgets.html">Sidebar Widgets</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a>
+                        <ul class="sub-menu">
+                            <li><a href="contact-1.html">Contact Version 1</a></li>
+                            <li><a href="contact-2.html">Contact Version 2</a></li>
+                            <li><a href="contact-3.html">Contact Version 3</a></li>
+                        </ul>
+                    </li>-->
+                    <li>
+                        <span class="emergency">     
+                                <i class="fa fa-mobile"></i>
+                                <span class="number">+27 011 642 9461</span><br/>
+                        <span class="sub-text">Feel free to give us a call</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- partial -->
+
+    <div class="jumbotron" style="background-image: url('assets/images/slider-hero.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1 class="heading">The South African Database for Functional Medicine</h1>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="col-sm-4">
+                    <div class="slider-box-appointment">
+                        <div class="header">
+                            <h3 class="heading font-2 text-center">Book an EPONS Demo</h3>
+                        </div>
+                        <hr class="hr-2" />
+                        <div class="body">
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                                </div>
+                                <p class="text-muted">*Before you proceed, you may read our FAQs</p>
+                                <button class="btn btn-black btn-block" type="submit">Book Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="bgcolor3 pt-40 pb-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="department-slider">
+                    <div class="slider-items">
+                        <div class="department-box-3 text-center">
+                            <i class="med-icon icon-i-laboratory"></i>
+                            <hr class="hr-1">
+                            <h4 class="inverse"><a href="department-single.html">Pathlab Services</a></h4>
+                        </div>
+                        <div class="department-box-3 text-center">
+                            <i class="med-icon icon-i-hearing-assistance"></i>
+                            <hr class="hr-1">
+                            <h4 class="inverse"><a href="department-single.html">Hearing Aid</a></h4>
+                        </div>
+                        <div class="department-box-3 text-center">
+                            <i class="med-icon icon-i-dental"></i>
+                            <hr class="hr-1">
+                            <h4 class="inverse"><a href="department-single.html">Dental Checkup</a></h4>
+                        </div>
+                        <div class="department-box-3 text-center">
+                            <i class="med-icon icon-i-cath-lab"></i>
+                            <hr class="hr-1">
+                            <h4 class="inverse"><a href="department-single.html">CT Scan</a></h4>
+                        </div>
+                        <div class="department-box-3 text-center">
+                            <i class="med-icon icon-i-ophthalmology"></i>
+                            <hr class="hr-1">
+                            <h4 class="inverse"><a href="department-single.html">Vision Care</a></h4>
+                        </div>
+                        <div class="department-box-3 text-center">
+                            <i class="med-icon icon-i-nursery"></i>
+                            <hr class="hr-1">
+                            <h4 class="inverse"><a href="department-single.html">Child Health</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+    <div class="container mt-80">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="heading-block">
+                    <h2 class="heading">What <span class="color1">We</span> Do</h2>
+                    <p class="sub-heading">The South African Database for Functional Medicine (SADFM) is a South African based organization doing
+                        developmental research into healthcare outcomes.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="feature-box right">
+                    <span class="count">1</span>
+                    <div class="text">
+                        <h4 class="heading">Research and development</h4>
+                        <p>We are a research and development organisation driven by the passion to improve healthcare outcomes
+                            in South Africa.</p>
+                    </div>
+                </div>
+                <div class="feature-box right">
+                    <span class="count">2</span>
+                    <div class="text">
+                        <h4 class="heading">Focused</h4>
+                        <p>Our focus is clear—and limited—and prioritizes ways and means to measure and report on healthcare
+                            outcomes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="feature-box right">
+                    <span class="count">3</span>
+                    <div class="text">
+                        <h4 class="heading">Patient needs</h4>
+                        <p>We seek, first, to understand - by measuring patient needs - before we seek to understand care needs.</p>
+                    </div>
+                </div>
+                <div class="feature-box right">
+                    <span class="count">4</span>
+                    <div class="text">
+                        <h4 class="heading">Healthcare Outcomes</h4>
+                        <p>By improving healthcare outcomes the potential exists to improve the quality of lives and the affordability
+                            of healthcare in South Africa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mt-20">
+                <img src="http://placehold.it/250x350" class="img-responsive" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-80">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="heading-block">
+                    <h2 class="heading">Our <span class="color1">Team</span></h2>
+                    <p class="sub-heading">The SADFM works on numerous projects with various national and international academics and institutions.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="doctor-box-2">
+                    <div class="doctor-img">
+                        <img src="http://placehold.it/150x150" class="img-circle" alt="">
+                    </div>
+                    <div class="doctor-name">
+                        <h4 class="heading">Dr Hennie Loubser</h4>
+                        <span class="doctor-desig">Director and chief</span>
+                    </div>
+                    <hr class="hr-1">
+                    <div class="doctor-details">
+                        <p>Director and chief qualitative researcher, designer and developer of the SADFM instruments.</p>
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <a href="https://za.linkedin.com/in/hennie-j-loubser-70855817" class="btn btn-black btn-sm">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="doctor-box-2">
+                    <div class="doctor-img">
+                        <img src="http://placehold.it/150x150" class="img-circle" alt="">
+                    </div>
+                    <div class="doctor-name">
+                        <h4 class="heading">Antonio Teixeira</h4>
+                        <span class="doctor-desig">Software and database manager</span>
+                    </div>
+                    <hr class="hr-1">
+                    <div class="doctor-details">
+                        <p>Software and database manager.</p>
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <a href="https://za.linkedin.com/in/antonio-teixeira-4440864a" class="btn btn-black btn-sm">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="doctor-box-2">
+                    <div class="doctor-img">
+                        <img src="http://placehold.it/150x150" class="img-circle" alt="">
+                    </div>
+                    <div class="doctor-name">
+                        <h4 class="heading">George van Gass</h4>
+                        <span class="doctor-desig">Database maintenance manager</span>
+                    </div>
+                    <hr class="hr-1">
+                    <div class="doctor-details">
+                        <p>Database maintenance manager.</p>
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <a href="https://za.linkedin.com/in/george-van-gass-630a9619" class="btn btn-black btn-sm">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-80">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="heading-block">
+                    <h2 class="heading">Measurement Tools Available</h2>
+                    <!--<p class="sub-heading">The patient’s needs and acuity level, at all times, dictate the intensity of service.</p>-->
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="iconbox-2">
+                    <div class="iconbox-icon">
+                        <i>	&alpha;</i>
+                    </div>
+                    <div class="iconbox-content">
+                        <h4 class="heading">Alpha</h4>
+                        <p>The Alpha Tool measures the person’s ability to maintain the functioning of their bodily organs and
+                            systems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="iconbox-2">
+                    <div class="iconbox-icon">
+                        <i>	&beta;</i>
+                    </div>
+                    <div class="iconbox-content">
+                        <h4 class="heading">Beta</h4>
+                        <p>The Beta Tool measures the person’s ability to care of himself within his immediate environment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="iconbox-2">
+                    <div class="iconbox-icon">
+                        <i>	&gamma;</i>
+                    </div>
+                    <div class="iconbox-content">
+                        <h4 class="heading">Gamma</h4>
+                        <p>The Gamma Tool measures the person’s ability to life independently within his immediate environment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="iconbox-2">
+                    <div class="iconbox-icon">
+                        <i>	&delta;</i>
+                    </div>
+                    <div class="iconbox-content">
+                        <h4 class="heading">Delta</h4>
+                        <p>The Delta Tool measures the ability of a person to interact with the world in a meaningful and appropriate
+                            way.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="iconbox-2">
+                    <div class="iconbox-icon">
+                        <i>	&omega;</i>
+                    </div>
+                    <div class="iconbox-content">
+                        <h4 class="heading">Omega</h4>
+                        <p>The Omega Tool measures the ability of a dying person to maintain their dignity while receiving palliative
+                            care.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="call-out-1 pt-60 pb-60 mt-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="left">
+                        <h3 class="inverse font-2 font24">Whenever you need. <strong>Wherever you need.</strong></h3>
+                        <p class="inverse">Feel free to email or call us with any questions you might have.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="right">
+                        <i class="fa fa-headphones"></i>
+                        <span class="call-us"><strong class="inverse text-capitalize font20">Call us now!</strong><br>+27 011 642 9461</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!--<div class="container mt-80">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="heading-block">
+                    <h2 class="heading">Our <span class="color1">Plans</span></h2>
+                    <p class="sub-heading">Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                        Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="pricing-box-1">
+                    <div class="header">
+                        <h3 class="heading">Child Health Plan</h3>
+                        <div class="price">
+                            <span>$29<small>.99</small></span>
+                            <span>per month</span>
+                        </div>
+                    </div>
+                    <hr class="hr-1">
+                    <div class="body">
+                        <div class="features">
+                            <ul>
+                                <li>
+                                    <strong>Full Body Check</strong>
+                                    <span>Includes Blood Pressure, RBC Count, Body Mass Index and Bone Marrow</span>
+                                </li>
+                                <li>
+                                    <strong>Hair Treatment</strong>
+                                    <span>Hair Thickness, Carbon Levels, Root analysis and tips</span>
+                                </li>
+                                <li>
+                                    <strong>Eye Care</strong>
+                                    <span>eye Sight Checkup, Free Pair of Lenses and tips for betterment.</span>
+                                </li>
+                                <li>
+                                    <strong>General Health</strong>
+                                    <span>Diet Chart according to BMI, Basic Exercises for Healthy Life.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="book-appointment-form.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy Now!</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="pricing-box-1 popular">
+                    <div class="header">
+                        <h3 class="heading">Adult Health Plan</h3>
+                        <div class="price">
+                            <span>$59<small>.99</small></span>
+                            <span>per month</span>
+                        </div>
+                    </div>
+                    <hr class="hr-1">
+                    <div class="body">
+                        <div class="features">
+                            <ul>
+                                <li>
+                                    <strong>Full Body Check</strong>
+                                    <span>Includes Blood Pressure, RBC Count, Body Mass Index and Bone Marrow</span>
+                                </li>
+                                <li>
+                                    <strong>Hair Treatment</strong>
+                                    <span>Hair Thickness, Carbon Levels, Root analysis and tips</span>
+                                </li>
+                                <li>
+                                    <strong>Eye Care</strong>
+                                    <span>eye Sight Checkup, Free Pair of Lenses and tips for betterment.</span>
+                                </li>
+                                <li>
+                                    <strong>General Health</strong>
+                                    <span>Diet Chart according to BMI, Basic Exercises for Healthy Life.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="book-appointment-form.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy Now!</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="pricing-box-1">
+                    <div class="header">
+                        <h3 class="heading">Mature Health Plan</h3>
+                        <div class="price">
+                            <span>$89<small>.99</small></span>
+                            <span>per month</span>
+                        </div>
+                    </div>
+                    <hr class="hr-1">
+                    <div class="body">
+                        <div class="features">
+                            <ul>
+                                <li>
+                                    <strong>Full Body Check</strong>
+                                    <span>Includes Blood Pressure, RBC Count, Body Mass Index and Bone Marrow</span>
+                                </li>
+                                <li>
+                                    <strong>Hair Treatment</strong>
+                                    <span>Hair Thickness, Carbon Levels, Root analysis and tips</span>
+                                </li>
+                                <li>
+                                    <strong>Eye Care</strong>
+                                    <span>eye Sight Checkup, Free Pair of Lenses and tips for betterment.</span>
+                                </li>
+                                <li>
+                                    <strong>General Health</strong>
+                                    <span>Diet Chart according to BMI, Basic Exercises for Healthy Life.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="book-appointment-form.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy Now!</a>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!--<div class="pt-60 pb-60 mt-80 parallax" style="background-image:url('assets/images/1920-600-dark.jpg')" data-speed="1.5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="counter-box-3">
+                        <span class="fact-count" data-from="0" data-to="912" data-speed="3000">912</span>
+                        <h4 class="heading">Successful Surgeries</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="counter-box-3">
+                        <span class="fact-count" data-from="0" data-to="245" data-speed="3000">245</span>
+                        <h4 class="heading">Doctors on Panel</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="counter-box-3">
+                        <span class="fact-count" data-from="0" data-to="930" data-speed="3000">930</span>
+                        <h4 class="heading">Meals Served</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="counter-box-3">
+                        <span class="fact-count" data-from="0" data-to="120" data-speed="3000">120</span>
+                        <h4 class="heading">Emergency Vehicles</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!--<div class="container mt-80">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="heading-block">
+                    <h2 class="heading">People <span class="color1">Love</span> Us</h2>
+                    <p class="sub-heading">Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                        Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="testimonial-slider">
+                    <div class="slider-items">
+                        <div>
+                            <div class="testi-img">
+                                <img src="assets/images/testi-1.jpg" class="img-circle" alt="">
+                            </div>
+                            <br>
+                            <p class="testi-heading">I cannot tell you how beautiful it is to see again...</p>
+                            <p class="testi-text">Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+                                texts. Separated they live in Bookmarksgrove right at the coast of the Semantics. Behind
+                                the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+                                texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+                        </div>
+                        <div>
+                            <div class="testi-img">
+                                <img src="assets/images/testi-2.jpg" class="img-circle" alt="">
+                            </div>
+                            <br>
+                            <p class="testi-heading">I cannot tell you how beautiful it is to see again...</p>
+                            <p class="testi-text">Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+                                texts. Separated they live in Bookmarksgrove right at the coast of the Semantics. Behind
+                                the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+                                texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <div class="left"><i class="fa fa-angle-left"></i></div>
+                        <div class="right"><i class="fa fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="mt-80 parallax" style="background-image:url('assets/images/1920-850-dark.jpg')" data-speed="1.5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-6 no-gutter">
+                    <div class="quick-appointment-form">
+                        <h3 class="heading thin font-2 inverse font30">Book an EPONS Demo</h3>
+                        <p class="text-muted">Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                            Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+                        <br/>
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Your First Name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Your Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Your Phone Number">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control" type="number" placeholder="Your Email ID">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control date-select" type="text" placeholder="Your Date of Birth">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <select>
+                                            <option>Select Appointment Slot</option>
+                                            <option>9:00 p.m. - 12:00 p.m.</option>
+                                            <option>12:00 p.m. - 4:00 p.m.</option>
+                                            <option>4:00 p.m. - 8:00 p.m.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-black" type="submit"><i class="fa fa-paper-plane"></i> Book Demo</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-1">
+        <!-- Footer Style 1 -->
+        <div class="footer-pri pt-20 pb-40">
+            <!-- Primary Footer -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="widget widget-message">
+                            <p>The South African Database for Functional Medicine (SADFM) is a South African based organization
+                                doing developmental research into healthcare outcomes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="widget widget-about">
+                            <a href="home-version-1.html">
+                                <img src="assets/images/sadfm/logo_text.png" style="width: 100%"></a>
+                            <br/><br/>
+                            <p>Our objective is to develop a robust statistical model to identify the clinical and financial
+                                risk associated with the care of a group of patients that are currently considered to have
+                                “unpredictable outcomes”.</p>
+                            <hr/>
+                            <ul class="contact">
+                                <li><i class="fa fa-phone"></i> +27 011 642 9461</li>
+                                <li><i class="fa fa-envelope"></i> antonio@sadfm.co.za</li>
+                            </ul>
+                            <hr/>
+                            <ul class="social social-2x">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="widget widget-twitter">
+                            <h4 class="heading">Latest Tweet</h4>
+                            <p><a href="#">#medwise_template</a> the most amazing template for medical use has been released.
+                                So, make a purchase now!</p>
+                        </div>
+                        <hr/>
+                        <div class="widget widget-flickr">
+                            <h4 class="heading">Flickr Stream</h4>
+                            <ul>
+                                <li><img src="assets/images/flickr-1.jpg" alt=""></li>
+                                <li><img src="assets/images/flickr-2.jpg" alt=""></li>
+                                <li><img src="assets/images/flickr-3.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-sec">
+            <!-- Secondary Footer -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span>&copy; 2017 All Rights Reserved. Developed by <a href="//developersworkspace.co.za" target="_blank">Developer's Workspace</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="back"><i class="fa fa-angle-up"></i></div>
+
+    <!-- partial:partials/scripts.html -->
+    <!-- JQuery Version 3.1.0 -->
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+
+<!-- Bootstrap Version 3.3.7 -->
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- Bootstrap Select (Dropdown Styling) -->
+<script src="assets/js/bootstrap-select.min.js" type="text/javascript"></script>
+
+<!-- Owl Carousel 2.0.0 -->
+<script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
+
+<!-- Appear JS -->
+<script src="assets/js/jquery.appear.js" type="text/javascript"></script>
+
+<!-- Count To JS -->
+<script src="assets/js/jquery.countTo.js" type="text/javascript"></script>
+
+<!-- jQuery UI (Date Picker) -->
+<script src="jassets/s/jquery-ui.min.js" type="text/javascript"></script>
+
+<!-- Custom JS -->
+<script src="assets/js/script.js" type="text/javascript"></script>
+    <!-- partial -->
+
+</body>
+
+</html>
